@@ -1,0 +1,40 @@
+Instrucciones de ejecución 
+
+http://localhost:8080/
+
+Criterios de aceptación
+• Deben mostrar al menos tres cursos
+• Al mostrar cada curso debe indicar el id, el nombre, la duración y el valor
+• Al momento de listar los cursos, debe transcurrir un intervalo de tiempo de 2 segundos 
+  entre cada curso
+
+>node principal
+
+Criterios de aceptación
+• Debe obligatoriamente ingresar el id del curso, nombre del interesado y cedula
+• Debe buscar la información del curso y retonarme la información del mismo
+• Debe generar en un archivo de texto con la información del curso en conjunto con la mía
+• Generar un mensaje de alerta en caso de no encontrar un id.
+• En  caso  de  no  estar  interesado  debe  mostrarme  la lista  de  cursos,  en  caso  de  escribir
+  “inscribir” debe hacer el proceso de inscripción
+
+Al escribirlo así nos muestra por pantalla que es obligatorio 
+ingresar las siguientes variables (id, nombre, cedula) para poderse inscribir
+
+>node principal inscribir -i=2 -n=Alexander 
+
+Al escribirlo así nos muestra por pantalla que se ha creado exitosamente la inscripción del
+estudiante ademas busca la información del curso y retonar la información del mismo y
+genera un archivo txt llamado "inscripcion" con los datos del estudiante y del curso
+
+>node principal inscribir -i=2 -n=Alexander -c=1234567
+
+Al escribirlo así nos muestra por pantalla un error lo cual el id del curso no existe
+
+>node principal inscribir -i=5 -n=Alexander -c=1234567
+
+Nos muestra el proceso de inscripción y que variables son obligatorias
+
+>node principal inscribir
+
+
