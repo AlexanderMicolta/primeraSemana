@@ -43,7 +43,7 @@ if(argv._ =='inscribir'){
         crearArchivo(cursos);
     }else{
         console.log('El curso no existe');
-		   let ofertaEstudiante1 = cursos.find(ofertaEst => ofertaEst.id == id1)
+ let ofertaEstudiante1 = cursos.find(ofertaEst => ofertaEst.id == id1)
  setTimeout(function(){
     console.log('El curso con id '+ ofertaEstudiante1.id+' se llama ' + ofertaEstudiante1.curso+' tiene una duración '+
     ofertaEstudiante1.duracion+' y un valor de '+ ofertaEstudiante1.valor+' pesos');
