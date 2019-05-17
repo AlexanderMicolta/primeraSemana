@@ -43,6 +43,23 @@ if(argv._ =='inscribir'){
         crearArchivo(cursos);
     }else{
         console.log('El curso no existe');
+		   let ofertaEstudiante1 = cursos.find(ofertaEst => ofertaEst.id == id1)
+ setTimeout(function(){
+    console.log('El curso con id '+ ofertaEstudiante1.id+' se llama ' + ofertaEstudiante1.curso+' tiene una duración '+
+    ofertaEstudiante1.duracion+' y un valor de '+ ofertaEstudiante1.valor+' pesos');
+});
+
+let ofertaEstudiante2 = cursos.find(ofertaEst2 => ofertaEst2.id == id2)
+setTimeout(function(){
+    console.log('El curso con id '+ ofertaEstudiante2.id+' se llama ' + ofertaEstudiante2.curso+' tiene una duración '+
+    ofertaEstudiante2.duracion+' y un valor de '+ ofertaEstudiante2.valor +' pesos');
+});
+
+let ofertaEstudiante3 = cursos.find(ofertaEst3 => ofertaEst3.id == id3)
+setTimeout(function(){
+    console.log('El curso con id '+ ofertaEstudiante3.id+' se llama ' + ofertaEstudiante3.curso+' tiene una duración '+
+    ofertaEstudiante3.duracion+' y un valor de '+ ofertaEstudiante3.valor +' pesos');
+});
     }
 }else{
     let ofertaEstudiante1 = cursos.find(ofertaEst => ofertaEst.id == id1)
